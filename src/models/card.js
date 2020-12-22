@@ -20,6 +20,8 @@ const CardSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
+CardSchema.index({ deck: 1, front: 1 }, { unique: true });
+
 class CardClass {
   static new(body, user) {
     const oneHourFuture = new Date();
