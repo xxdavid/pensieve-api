@@ -36,7 +36,7 @@ class UserClass {
       },
       config.jwt,
       {
-        expiresIn: 60 * 60 * 72, // expires in 72 hours
+        expiresIn: 60 * 60 * 24 * 7, // expires in 7 days
       },
     );
   }
